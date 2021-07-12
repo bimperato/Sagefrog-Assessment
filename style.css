@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+.pdxImg {
+    position: relative;
+    top: -70px;
+}
+
+body {
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font: normal normal bold 25px Roboto;
+    color: black
+}
+
+header {
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.container {
+    align-items: center;
+    display: flex;
+    opacity: 1;
+    height: 90px;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 10px 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding-bottom: 90px;
+}
+
+.deliveryContainer {
+    padding-left: 40px;
+}
+
+.delivery {
+    font: normal normal bold 18px/58px Roboto;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    margin-left: 70%;
+    color: #58585A;
+    letter-spacing: 1px;
+}
+
+#summarySection {
+    background-image:url("images/header.png");
+    background-repeat:no-repeat;
+    box-shadow:inset 0 10 10px black;
+    background-position: right top;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    padding-top: 90px;
+    padding-left: 10%;
+}
+
+.pdxHeader {
+    font: 50px Roboto;
+    font-weight: 00;
+    width: 40%;
+    letter-spacing: 1.5px;
+    
+}
+
+.pdxParagraph {
+    font: normal normal 300 22px/38px Roboto;
+    color: #585858;
+    padding-bottom: 45px;
+    width: 40%;
+    opacity: 80%;
+    
+}
+
+.modal-btn {
+    background: var(--unnamed-color-a9c23f) 0% 0% no-repeat padding-box;
+    background-color: #A9C23F;
+    opacity: 1; 
+    width: 12%;
+    height: 80px;
+    margin-bottom: 10%;
+    color: var(--unnamed-color-000000);
+    font: normal normal bold 20px/40px Roboto;
+    letter-spacing: 1px;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+}
+
+.learnButton{ 
+    background: var(--unnamed-color-a9c23f) 0% 0% no-repeat padding-box;
+    background-color: #A9C23F;
+    opacity: 1; 
+    width: 50%;
+    height: 70px;
+    color: var(--unnamed-color-000000);
+    font: normal normal bold 20px/40px Roboto;
+    letter-spacing: 1px;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 50px;
+    margin-right: 20%;
+}
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    width: 100;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s; 
+    
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confidentHeader {
+    font: 40px Roboto;
+    width: 70%;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.panel1 {
+    margin-left: 10%;
+}
+
+#confidentSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #F0F0F0;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    
+}
+
+.confidentParagraph {
+    font: normal normal 300 20px/35px Roboto;
+    width: 70%;
+    line-height: 40px;
+
+}
+
+.confidentNestedGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-left: 40px;
+   
+}
+
+  @media screen and (min-width: 1800px)  {
+    .panel1 {
+        margin-left: 17%;
+    }
+    .pdxParagraph {
+        width: 35%;
+
+    }
+
+    .pdxHeader {
+        font-size: 55px;
+
+    }
+  } 
